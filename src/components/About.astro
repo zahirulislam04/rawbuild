@@ -1,0 +1,27 @@
+---
+import { about } from '../data/about';
+---
+
+<section id="about" class="py-24 px-6 max-w-3xl mx-auto">
+  <h2 class="text-3xl font-bold text-slate-900 dark:text-slate-50 mb-8">
+    About
+  </h2>
+  <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
+    {about.bio}
+  </p>
+  <div class="flex flex-col sm:flex-row gap-4 text-sm text-slate-500 dark:text-slate-400">
+    <span class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+      {about.location}
+    </span>
+    <span class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+      {about.currentFocus}
+    </span>
+  </div>
+</section>

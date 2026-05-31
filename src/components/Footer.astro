@@ -1,0 +1,19 @@
+---
+import { contact } from '../data/contact';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-slate-200 dark:border-slate-800 py-8 px-6">
+  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-500 dark:text-slate-400">
+    <span>© {year} rawbuild</span>
+    <a
+      href={contact.githubUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hover:text-slate-900 dark:hover:text-slate-50 transition-colors"
+    >
+      GitHub
+    </a>
+  </div>
+</footer>
