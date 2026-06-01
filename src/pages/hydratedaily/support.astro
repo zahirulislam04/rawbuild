@@ -1,0 +1,157 @@
+---
+const title = 'Support — HydrateDaily';
+const description = "Get help with HydrateDaily. Browse FAQs or contact us directly — we typically respond within 24 hours.";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rawbuild.de/hydratedaily/support" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f9f8f6;
+      color: #2c2c2a;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 680px; margin: 0 auto; }
+    .logo { font-size: 22px; font-weight: 600; color: #1A78D4; margin-bottom: 0.5rem; }
+    .logo span { color: #0F8A6A; }
+    h1 { font-size: 28px; font-weight: 600; color: #1a1a18; margin-bottom: 0.4rem; }
+    .subtitle { font-size: 16px; color: #888780; margin-bottom: 2.5rem; }
+    .contact-card {
+      background: #EBF4FF;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .contact-icon { font-size: 28px; flex-shrink: 0; }
+    .contact-title { font-size: 16px; font-weight: 600; color: #1a1a18; margin-bottom: 0.3rem; }
+    .contact-desc { font-size: 14px; color: #3c3c3a; margin-bottom: 0.6rem; }
+    .contact-link {
+      display: inline-block;
+      background: #1A78D4;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .contact-link:hover { background: #155fa8; }
+    h2 { font-size: 20px; font-weight: 600; color: #1a1a18; margin: 2rem 0 1rem; }
+    .faq-item { border-bottom: 1px solid #e8e6e0; padding: 1rem 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 15px; font-weight: 600; color: #1a1a18; margin-bottom: 0.4rem; }
+    .faq-a { font-size: 14px; color: #3c3c3a; }
+    .faq-a a { color: #1A78D4; }
+    .steps { padding-left: 1.4rem; margin-top: 0.4rem; }
+    .steps li { font-size: 14px; color: #3c3c3a; margin-bottom: 0.3rem; }
+    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e8e6e0; font-size: 13px; color: #888780; }
+    a { color: #1A78D4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="logo">Hydrate<span>Daily</span></div>
+  <h1>Support</h1>
+  <p class="subtitle">We're here to help. Most questions are answered below — or reach out directly.</p>
+
+  <div class="contact-card">
+    <div class="contact-icon">✉️</div>
+    <div>
+      <p class="contact-title">Contact us directly</p>
+      <p class="contact-desc">Can't find your answer below? We typically respond within 24 hours.</p>
+      <a class="contact-link" href="mailto:hello@rawbuild.de">hello@rawbuild.de</a>
+    </div>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+
+  <div class="faq-item">
+    <p class="faq-q">How is my daily goal calculated?</p>
+    <p class="faq-a">Your goal is based on your body weight and activity level using a science-backed formula (approximately 35 ml per kg of body weight, adjusted for how active you are). You can always override it manually in Settings → Goal.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Why does my goal change on some days?</p>
+    <p class="faq-a">If you have location permission enabled, HydrateDaily adjusts your goal upward on hot days (+300 ml above 28°C, +500 ml above 35°C). Your morning activity check-in also adjusts the goal — Active days add more than Rest days. You can see a breakdown by tapping the goal number on the home screen.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Why did my streak reset?</p>
+    <p class="faq-a">Your streak requires reaching at least 90% of your daily goal before midnight in your local timezone. If you fell below that threshold, the streak resets at midnight. Tip: check your History tab to see which day was missed.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Why does coffee only add a fraction to my goal?</p>
+    <p class="faq-a">Different drinks hydrate you differently. Coffee and black tea have a mild diuretic effect, so they count as 0.6× their volume. Herbal tea and water count in full (1.0×). This is intentional — your progress ring reflects true hydration, not just raw liquid consumed. Tap the ⓘ icon next to any log entry to see the exact calculation.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">I'm not receiving reminders. How do I fix this?</p>
+    <p class="faq-a">Try these steps in order:
+      <ol class="steps">
+        <li>Go to your iPhone Settings → HydrateDaily → Notifications — make sure notifications are allowed</li>
+        <li>Check that your waking hours are set correctly in HydrateDaily → Settings → Reminders</li>
+        <li>Reminders automatically stop once you've hit your daily goal — this may be expected behaviour</li>
+        <li>If reminders are paused, open the app and tap "Resume" on the home screen banner</li>
+        <li>Try toggling reminders off and back on in Settings → Reminders</li>
+      </ol>
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">How do I delete a logged entry?</p>
+    <p class="faq-a">On the home screen, pull up the bottom sheet (swipe up from below the silhouette). Each entry has a trash icon — tap it to delete. The silhouette water level updates immediately.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Can I change my unit from ml to oz?</p>
+    <p class="faq-a">Yes — go to Settings → Units and toggle between ml and oz. All displayed values update immediately.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Is HydrateDaily free? Are there any hidden charges?</p>
+    <p class="faq-a">HydrateDaily is completely free. There are no subscriptions, no in-app purchases, no premium tiers, and no ads. Every feature is available to everyone.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">Where is my data stored? Is it safe?</p>
+    <p class="faq-a">All your data is stored locally on your device only. Nothing is sent to our servers. We don't have access to your hydration logs, goal, or check-in responses. See our <a href="https://rawbuild.de/hydratedaily/privacy">Privacy Policy</a> for full details.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">How do I reset the app and start over?</p>
+    <p class="faq-a">Go to Settings → About → Reset all data. This clears all logs, streaks, check-in history, and settings. The onboarding flow will start again on next open. This action cannot be undone.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">The tilt effect isn't working. What should I check?</p>
+    <p class="faq-a">The tilt effect uses your device's accelerometer. Make sure Motion & Fitness is enabled: iPhone Settings → Privacy & Security → Motion & Fitness → HydrateDaily. Also check that Reduce Motion is not enabled in Accessibility settings, as this disables the tilt effect.</p>
+  </div>
+
+  <div class="faq-item">
+    <p class="faq-q">I found a bug or have a feature suggestion.</p>
+    <p class="faq-a">We'd love to hear from you! Email us at <a href="mailto:hello@rawbuild.de">hello@rawbuild.de</a> with details of the issue or your idea. Please include your iOS version and iPhone model for bug reports.</p>
+  </div>
+
+  <footer>
+    <p>© 2026 rawbuild.de · <a href="https://rawbuild.de/hydratedaily/privacy">Privacy Policy</a> · <a href="mailto:hello@rawbuild.de">hello@rawbuild.de</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
