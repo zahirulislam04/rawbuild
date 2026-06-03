@@ -18,8 +18,9 @@ export const projects: Project[] = [
   {
     name: "Hydrate Daily - Water Tracker",
     description: "A calm hydration companion for iPhone. Track water and drink intake, build daily streaks, and meet your personal goal. Free, no account needed.",
-    techStack: ["Swift", "SwiftUI", "iOS"],
+    techStack: ["React Native", "Expo"],
     status: "in-progress",
     demoUrl: "https://rawbuild.de/hydratedaily",
+    coverImage: "/hydratedaily/icon.png",
   },
 ];
