@@ -16,9 +16,10 @@ export const projects: Project[] = [
     status: "in-progress",
   },
   {
-    name: "Water Intake Tracker",
-    description: "A simple app to log daily hydration and build healthy drinking habits.",
-    techStack: ["React Native", "Expo"],
+    name: "Hydrate Daily - Water Tracker",
+    description: "A calm hydration companion for iPhone. Track water and drink intake, build daily streaks, and meet your personal goal. Free, no account needed.",
+    techStack: ["Swift", "SwiftUI", "iOS"],
     status: "in-progress",
+    demoUrl: "https://rawbuild.de/hydratedaily",
   },
 ];
